@@ -25,6 +25,10 @@ int main()
             scanf("%c", &ingreso);
         }
         nombreUsuario[i] = '\0';
+        if(nombreUsuario[0] == '\0'){
+            printf("No se ingreso un nombre.. Intente nuevamente.\n");
+            i = 0;
+        }
     }while(nombreUsuario[0] == '\0');
     i = 0;
 
